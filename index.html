@@ -79,7 +79,84 @@
             width: 30px; /* Định dạng chiều rộng */
             height: auto; /* Giữ tỷ lệ khung hình tự động */
         }
+        
+         /* Tạo hiệu ứng cho nút Reply */
+         .reply-button 
+         {
+            background-color: #f2f2f2;
+            border: none;
+            color: black;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
 
+        .reply-button:hover 
+        {
+            background-color: #ddd;
+        }
+
+        /* Tạo hiệu ứng cho nút Like */
+        .like-button 
+        {
+            background-color: #f2f2f2;
+            border: none;
+            color: black;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .like-button:hover 
+        {
+            background-color: #ddd;
+        }
+
+        /* Tùy chỉnh hộp thoại chat box */
+        #chatBox 
+        {
+            display: none;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        #commentInput 
+        {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: none;
+        }
+
+        #submitCommentBtn 
+        {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #submitCommentBtn:hover 
+        {
+            background-color: #45a049;
+        }
     </style>
 </head>
 
@@ -233,7 +310,41 @@
     </footer>
 
     <!--fontawesome-->
-     <script src="https://kit.fontawesome.com/0c6e82ebfb.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0c6e82ebfb.js" crossorigin="anonymous"></script>
+
+    <script>
+        // Toggle giữa hiển thị và ẩn hộp thoại chat box
+        function toggleChatBox(chatBoxId) 
+        {
+            var chatBox = document.getElementById(chatBoxId);
+            if (chatBox.style.display === "none") 
+            {
+                chatBox.style.display = "block";
+            } 
+            else 
+            {
+                chatBox.style.display = "none";
+            }
+        }
+
+        // Xử lý việc gửi comment
+        function submitComment(inputId, chatBoxId) 
+        {
+            var comment = document.getElementById(inputId).value;
+            // Xử lý comment ở đây
+            console.log("Comment submitted: " + comment);
+            // Sau khi comment được gửi, ẩn hộp thoại chat box
+            document.getElementById(chatBoxId).style.display = "none";
+        }
+
+        // Xử lý việc thích bài viết
+        function likeFunction(x) 
+        {
+            x.style.fontWeight = "bold";
+            x.innerHTML = "✓ Liked";
+        }
+    </script>
+
 </body>
 
 </html>
