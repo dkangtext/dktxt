@@ -1,13 +1,35 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content = "IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DKTXT'S SPACE</title>
+
+    <!--google font-->    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    
+    <!--main css-->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Project: Introduction to Computer Networks</title>
+
     <style>
+        h1, h2, h3, h4, h5, h6 
+        {
+            font-family: "Oswald";
+        }
+
         body 
         {
-            font-family: Roboto, sans-serif;
+            font-family: "Open Sans";
             margin: 0;
             padding: 0;
         }
@@ -35,7 +57,7 @@
             margin: 0 10px;
         }
         
-        nav a: hover 
+        nav a:hover 
         {
             text-decoration: underline;
         }
@@ -50,66 +72,169 @@
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
         }
 
-        <style>
         #social img 
         {
-            width: 20px; /* Định dạng chiều rộng */
+            width: 30px; /* Định dạng chiều rộng */
             height: auto; /* Giữ tỷ lệ khung hình tự động */
         }
-        </style>
-
-</style>
 
     </style>
 </head>
 
 <body>
-    <header>
-        <h1>DKTXT'S SPACE</h1>
+
+     <!-- Header -->
+    <header class="w3-container w3-center w3-padding-48 w3-white">
+        <h1 class="w3-xxxlarge"><b>DKANG BLOGLIFE</b></h1>
+        <h6>Welcome to the blog of <span class="w3-tag">dkangtext</span></h6>
     </header>
+
     <nav>
         <a href="#home">HOME</a>
         <a href="#about">ABOUT ME</a>
         <a href="#contact">CONTACT</a>
     </nav>
+
+    <!-- Grid -->
+    <div class="w3-row w3-padding w3-border">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+    
+    <!-- Blog entry -->
+    <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+            <h3>INTRODUCTION</h3>
+        </div>
+
+        <div class="w3-justify">
+            <img src="https://i.pinimg.com/originals/82/44/5e/82445e6272010a3f03db4917e7e105f8.jpg" alt="Photo 01" style="width:100%" class="w3-padding-16">
+            <p><strong>Xin chao</strong> Nhung ngay that dep trong tuoi thanh xuan cua toi </p>
+            <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+            <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
+            <p class="w3-clear"></p>
+            <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+                <hr>
+            </div>
+        </div>
+    </div>
+    <hr>
+    
+    <!-- END BLOG ENTRIES -->
+    </div>
+    
+    <!-- About/Information menu -->
+    <div class="w3-col l4">
+
+    <!-- About Card -->
+    <div class="w3-white w3-margin">
+        <img src="/w3images/avatar_girl2.jpg" alt="Jane" style="width:100%" class="w3-grayscale">
+        <div class="w3-container w3-black">
+            <h4>DINHKHANG</h4>
+            <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+        </div>
+    </div>
+    <hr>
+  
+    <!-- Tags -->
+    <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+            <h4>Tags</h4>
+        </div>
+    
+        <div class="w3-container w3-white">
+        <p>
+            <span class="w3-tag w3-black w3-margin-bottom">Fashion</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Hats</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Norway</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sweaters</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Deals</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Accessories</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Jeans</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Trends</span>
+        </p>
+        </div>
+    </div>
+    <hr>
+
+    <!-- Inspiration -->
+    <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+            <h4>Inspiration</h4>
+        </div>
+
+        <div class="w3-row-padding w3-white">
+            <div class="w3-col s6">
+                <p><img src="/w3images/jeans.jpg" alt="Jeans" style="width:100%"></p>
+                <p><img src="/w3images/team1.jpg" alt="Jeans" style="width:100%"></p>
+            </div>
+    
+            <div class="w3-col s6">
+                <p><img src="/w3images/avatar_hat.jpg" alt="Men in Hats" style="width:100%" class="w3-grayscale"></p>
+                <p><img src="/w3images/team4.jpg" alt="Jeans" style="width:100%"></p>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+            <h4>Follow Me</h4>
+        </div>
+        
+        <div class="w3-container w3-xlarge w3-padding">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+    </div>
+    <hr>
+
+    <!-- END About/Intro Menu -->
+    </div>
+
+    <!-- END GRID -->
+    </div>
+
+    <!-- END w3-content -->
+    </div>
+
     <section id="home">
         <h2>HOME</h2>
+        <p>This is my project for my subject: Introduction to Computer Networks</p>
         <p>Hello there! I'm Dinh Khang</p>
         <p>I'm a student at the University of Information Technology - VNUHCM</p>
-        <p>Department of Computer Networks and Data Communications with a major in Information Security.</p>  
+        <p>Department of Computer Networks and Communications with a major in Information Security.</p>  
     </section>
     
     <section id="about">
         <h2>ABOUT ME</h2>
+        <p>I am currrently work at Department of Computer Networks and Communications.</p>
+        <p>I love listening to the music whenever I have my free time. Music can help me relax after a long time stressing with homework and deadlines at School.</p>
         <p>More photos about my work and my daily life:</p>
         <ul>
-            <center><img src="https://i.pinimg.com/originals/82/44/5e/82445e6272010a3f03db4917e7e105f8.jpg" alt "Doan khoa Mang may tinh & Truyen thong" /></center>
+            <center><img src=" " alt "Doan khoa Mang may tinh & Truyen thong" /></center>
         </ul>
     </section>
-    
+ 
     <section id="contact">
         <h2>CONTACT</h2>
         <p>You can contact me via email: <a href="mailto:23520694@gm.uit.edu.vn">23520694@gm.uit.edu.vn</a></p>
     </section>
-    
-    <section id="social">
-        <h2>SOCIAL MEDIA</h2>
-        <ul>
-            <li><a href="https://www.facebook.com/dkang.text" target="_blank"><img src="https://cdn1.iconfinder.com/data/icons/social-media-set-for-free/32/facebook-512.png" alt="Facebook"></a></li>
-            <li><a href="https://twitter.com/dkangtext" target="_blank"><img src="https://cdn1.iconfinder.com/data/icons/social-media-set-for-free/32/twitter-512.png" alt="Twitter"></a></li>
-            <li><a href="https://www.instagram.com/dkang.text" target="_blank"><img src="https://cdn1.iconfinder.com/data/icons/social-media-set-for-free/32/instagram-512.png" alt="Instagram"></a></li>
-        </ul>     
-    </section>
-    
-    <footer>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-dark-grey" style="padding:32px">
+        <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
         <p>Copyright © 2024 - dktxt</p>
     </footer>
+
+    <!--fontawesome-->
+     <script src="https://kit.fontawesome.com/0c6e82ebfb.js" crossorigin="anonymous"></script>
     
+    <!--main java srcipt-->
+    <script> scr = "./js/main.js" </script>
 </body>
+
 </html>
