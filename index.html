@@ -11,279 +11,149 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
     
     <!--main css-->
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Project: Introduction to Computer Networks</title>
+    <title>Không gian văn hóa Hồ Chí Minh</title>
 
     <style>
-        h1, h2, h3, h4, h5, h6 
+        body,h1,h2,h3,h4,h5 
         {
-            font-family: "Oswald";
+            font-family: "Roboto", sans-serif;
         }
 
-        body 
+        body,html 
         {
-            font-family: "Open Sans";
-            margin: 0;
-            padding: 0;
-        }
-        
-        header 
-        {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        
-        nav 
-        {
-            background-color: #444;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-        
-        nav a 
-        {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        
-        nav a:hover 
-        {
-            text-decoration: underline;
-        }
-        
-        section 
-        {
-            padding: 20px;
-        }
-        
-        footer 
-        {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
+            height: 100%;
         }
 
-        #social img 
+        .bgimg 
         {
-            width: 30px; /* Định dạng chiều rộng */
-            height: auto; /* Giữ tỷ lệ khung hình tự động */
-        }
-        
-         /* Tạo hiệu ứng cho nút Reply */
-         .reply-button 
-         {
-            background-color: #f2f2f2;
-            border: none;
-            color: black;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 8px;
-        }
-
-        .reply-button:hover 
-        {
-            background-color: #ddd;
-        }
-
-        /* Tạo hiệu ứng cho nút Like */
-        .like-button 
-        {
-            background-color: #f2f2f2;
-            border: none;
-            color: black;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 8px;
-        }
-
-        .like-button:hover 
-        {
-            background-color: #ddd;
+            background-image: url("https://i.pinimg.com/originals/75/ad/88/75ad88ee6795fd0aaadb0ad2068529bc.png");
+            min-height: 100%;
+            background-position: center;
+            background-size: cover;
         }
     </style>
 </head>
 
 <body>
 
-     <!-- Header -->
-    <header class="w3-container w3-center w3-padding-48 w3-white">
-        <h1 class="w3-xxxlarge"><b>DKANG BLOGLIFE</b></h1>
-        <h6>Welcome to the blog of <span class="w3-tag">dkangtext</span></h6>
+    <!-- Header -->
+    <header class="w3-container w3-center w3-padding-20 w3-white">
+        <img src="https://i.pinimg.com/originals/75/26/56/752656fe8e8778205bd61022fd533b46.png" alt="Logo" style="width:150px" class="w3-padding-16">
+        <h5>TRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN - ĐHQG-HCM</h5>
+        <h5>ĐOÀN KHOA MẠNG MÁY TÍNH VÀ TRUYỀN THÔNG</h5>
     </header>
 
-    <nav>
-        <a href="#home">HOME</a>
-        <a href="#about">ABOUT ME</a>
-        <a href="#contact">CONTACT</a>
-    </nav>
-
-    <!-- Grid -->
-    <div class="w3-row w3-padding w3-border">
-
-    <!-- Blog entries -->
-    <div class="w3-col l8 s12">
-    
-    <!-- Blog entry -->
-    <div class="w3-container w3-white w3-margin w3-padding-large">
-        <div class="w3-center">
-            <h3>INTRODUCTION</h3>
-            <h4>Đôi nét về thanh xuân tươi đẹp của tớ ...</h4>
+    <div class="bgimg w3-display-container w3-text-white">
+        <div class="w3-display-middle w3-jumbo">
+            <!-- <p>HÀNH TRÌNH 30 NĂM CỨU NƯỚC CỦA BÁC HỒ</p> -->
+        </div>
+        <div class="w3-display-topright w3-container w3-xlarge">
+            <div style="position: absolute; top: 0; right: 0;"></div>
+                <p><button onclick="openAbout()" class="w3-display-topright w3-button w3-white" style="margin-top: 10px;">GIỚI THIỆU</button></p>
+                <p><button onclick="openInformation()" class="w3-display-topright w3-button w3-white" style="margin-top: 70px;">GIAI ĐOẠN 1: 1911 - 1919</button></p>
+            </div>
         </div>
 
-        <div class="w3-justify">
-            <img src="https://i.pinimg.com/originals/82/44/5e/82445e6272010a3f03db4917e7e105f8.jpg" alt="Photo 01" style="width:100%" class="w3-padding-16">
-            <p><strong>Xin chào !</strong> Những ngày thật đẹp trong quãng thanh xuân tuổi 18 của tớ !</p>
-            <img src="https://i.pinimg.com/originals/ba/7c/bf/ba7cbf70f0c3b4c4d68967c6f0394877.jpg" alt="Photo 02" style="width:100%" class="w3-padding-16">
-            <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
-            <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
-            <p class="w3-clear"></p>
-            <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
-                <hr>
+    <!-- About Modal -->
+    <div id="about" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom">
+            <div class="w3-container w3-white w3-display-container" style="text-align: justify;">
+                <span onclick="closeAbout()" class="w3-button w3-display-topright w3-large">x</span>
+                <section>
+                    <h2>GIỚI THIỆU:</h2>
+                    <p>Không gian văn hóa Hồ Chí Minh là chuỗi sự kiện truyền thông giúp cho mọi người hiểu biết sâu sắc về thân thế, sự nghiệp cách mạng của Chủ tịch Hồ Chí Minh, vừa khẳng định sức mạnh của văn hóa Việt Nam, qua đó thực hiện công tác tuyên truyền, giới thiệu, tôn vinh Chủ tịch Hồ Chí Minh, Anh hùng giải phóng dân tộc, Danh nhân văn hóa thế giới gắn với việc thực hiện học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh.</p>
+                    <ul>
+                        <center>
+                            <img src="https://i.pinimg.com/originals/f1/b2/ce/f1b2ce0415582e0c6f67c10c0c7b437f.jpg" alt="BacHo" style="fill: 80%;">
+                            <img src="https://i.pinimg.com/originals/dd/07/f3/dd07f370b0300b4b46bda157791b7150.jpg" alt="BacHo" style="width:80%">
+                            <img src="https://i.pinimg.com/originals/38/77/1e/38771e4d618821682ab72a1e89770be5.jpg" alt="BacHo" style="fill: 70%">
+                        </center>
+                    </ul>
+                </section>
             </div>
         </div>
     </div>
-    <hr>
-    
-    <!-- END BLOG ENTRIES -->
-    </div>
-    
-    <!-- About/Information menu -->
-    <div class="w3-col l4">
 
-    <!-- About Card -->
-    <div class="w3-white w3-margin">
-        <img src="https://i.pinimg.com/originals/20/74/4c/20744ce131295c08ef32e9ed45e4f02e.jpg" alt="Dinh Khang" style="width:100%" class="w3-grayscale">
-        <div class="w3-container w3-black">
-            <h4>DINHKHANG</h4>
-            <p>Chỉ đơn giản là Đình Khang. Một người sống nội tâm hay khóc thầm !</p>
-        </div>
-    </div>
-    <hr>
-  
-    <!-- Tags -->
-    <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-            <h4>Tags</h4>
-        </div>
-    
-        <div class="w3-container w3-white">
-        <p>
-            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Technology</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Information</span>
-            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Networks</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DinhKhang</span> 
-        </p>
-        </div>
-    </div>
-    <hr>
-
-    <!-- Inspiration -->
-    <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-            <h4>Inspiration</h4>
-        </div>
-
-        <div class="w3-row-padding w3-white">
-            <div class="w3-col s6">
-                <p><img src="https://i.pinimg.com/564x/c0/01/a0/c001a092ec74a05fb6f57e04d103141e.jpg" alt="You are enough just as you are" style="width:100%"></p>
-                <p><img src="https://i.pinimg.com/564x/c2/2f/7d/c22f7d753b274458adf202c22e416c5f.jpg" alt="Dear me & Love me" style="width:100%"></p>
-            </div>
-    
-            <div class="w3-col s6">
-                <p><img src="https://i.pinimg.com/736x/d5/c6/5a/d5c65abe3383afec2bb0e94d9af49abf.jpg" alt="In your twenty" style="width:100%" class="w3-grayscale"></p>
-                <p><img src="https://i.pinimg.com/564x/d5/0a/b3/d50ab31614323d766252dfb9c10d1a64.jpg" alt="Take care of urself" style="width:100%"></p>
+    <!-- Information Modal -->
+    <div id="information" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom">
+            <div class="w3-container w3-white" style="text-align: justify;">
+                <span onclick="closeInformation()" class="w3-button w3-display-topright w3-large">x</span>
+                <section>
+                    <h2>GIAI ĐOẠN 1: 1911 - 1919</h2>
+                    <p>Đầu thế kỷ XX, đất nước ta đặt dưới ách thống trị của thực dân Pháp và phong kiến tay sai, bị đắm chìm trong ách nô lệ, bị xóa tên trên bản đồ thế giới. Đã có hàng trăm cuộc khởi nghĩa diễn ra vì không chịu khuất phục cảnh lầm than nô lệ. Nhưng các con đường cứu nước mang màu sắc khác nhau, dẫn đến kết quả chung là đều thất bại và rơi vào bế tắc.</li>
+                    <p>Lúc bấy giờ, Nguyễn Tất Thành đã có nhận thức sâu sắc về thực tại xã hội và rất đau xót trước nỗi thống khổ của dân tộc, và đã sớm có ý chí đánh đuổi thực dân Pháp, với mong muốn giải phóng đồng bào. Người đã quyết định ra đi tìm đường cứu nước. Người đi sang nước Pháp, sang các nước phương Tây để tìm hiểu vì sao họ giàu mạnh, hiểu những ẩn giấu sau những từ “tự do - bình đẳng - bác ái” mà thực dân Pháp rêu rao ở các nước thuộc địa.</p>
+                    <ul>
+                        <center>
+                            <img src="https://i.pinimg.com/originals/01/38/eb/0138eb06eb3f618d54efb28792b53d63.png" alt = "Tudo-Binhdang-Bacai" style="fill: 80%;">
+                        </center>
+                    </ul>
+                    <p>     Vào ngày 05/06/1911, trên con tàu Đô đốc La-tút-sơ Tơ-rê-vin, rời khỏi bến cảng Nhà Rồng (Sài Gòn) với tên gọi Văn Ba, Người xuống làm thuê cho một hãng tàu buôn của Pháp để bắt đầu thực hiện quyết tâm và khát vọng cứu nước, cứu dân của mình. Trong suốt quá trình di chuyển, con tàu Đô đốc La-tút-sơ Tơ-rê-vin dừng chân ở cảng Mác-Xây vào ngày 06/07/1911. Trong thời gian chờ tàu dỡ hàng, chàng thanh niên yêu nước Nguyễn Tất Thành tranh thủ thời gian của mình để tìm hiểu về đời sống nhân dân Pháp.</p>
+                    <ul>
+                        <center>
+                            <img src="https://i.pinimg.com/originals/dc/77/67/dc77679c269df1aa5048c797760a10c0.jpg" alt = "TauDoDocLatusoTorevin" style="width: 100%;">
+                        </center>
+                    </ul>
+                    <p>Đến năm 1912, Người chuyển qua làm thuê cho một chiếc tàu của hãng Sácgiơ Rêuyni (Pháp). Tại đây, Người có điều kiện vừa làm việc, vừa nghiên cứu học hỏi thêm từ thực tế. Sau đó, Nguyễn Tất Thành theo con tàu tiếp tục đi Mác-ti-ních (Martinique) (Trung Mỹ), Urugoay và Argentina (Nam Mỹ) và dừng lại ở nước Mỹ vào cuối năm 1912.</p>
+                    <p>Giữa năm 1913, Nguyễn Tất Thành theo tàu trở lại Lơ Havơrơ, sau đó sang Anh. Ở Anh, Người nhận cào tuyết cho một trường học, rồi làm thợ đốt lò, làm phụ bếp,... Công việc hết sức nặng nhọc nhưng sau mỗi ngày Người đều tranh thủ thời gian học Tiếng Anh và tiếp tục nghiên cứu về lịch sử của nước Mỹ, nước Anh,.. Nhờ vậy, Người đã có kiến thức sâu sắc về lịch sử phương Tây và những giá trị của nền văn minh phương Tây như tự do, dân chủ, bình đẳng, bác ái,...</p>
+                    <p>Cuối năm 1917, Nguyễn Tất Thành từ Anh trở lại Pháp để có điều kiện trực tiếp hoạt động trong phong trào Việt kiều và phong trào công nhân Pháp, lúc đầu Nguyễn Tất Thành ở phố Charonne trong một thời gian ngắn; từ ngày 7 đến 11-6-1919 ở nhà số 10, phố Stockholm; ngày 12-6-1919, chuyển đến ở nhà số 56 phố Monsieur le Prince; tháng 7-1919, ở nhà số 6, phố Villa des Gobelins, quận 13; ngày 14-7-1921, chuyển đến ở nhà số 12, phố Buyô. Trong tháng 7-1921, Nguyễn Tất Thành chuyển đến nhà số 9, ngõ Compoint, quận 17, một trong những khu lao động nghèo nhất của Thủ đô nước Pháp. Ngày 14-3-1923, Người đến ở nhà số 3, phố Marché des Patriarches.</p>
+                    <ul>
+                        <center>
+                            <img src="https://i.pinimg.com/originals/b4/28/06/b4280628b582fa07d5eead2d37250785.jpg" alt = "Place" style="fill: 100">
+                        </center>
+                    </ul>
+                    <p>Trải qua 6 năm (từ năm 1911 đến năm 1917), Người bôn ba khắp năm châu bốn biển, Người một mặt tiếp cận tìm hiểu thực tế đời sống nhân dân lao động của nhiều quốc gia trên đường Người đi qua ở các châu lục và nghiên cứu học hỏi nên đã có hiểu biết về bản chất chung và màu sắc riêng của mỗi nước đế quốc cũng như trình độ phát triển kinh tế - văn hóa - xã hội khác nhau giữa các nước thuộc địa.</p>
+                    <ul>
+                        <center>
+                            <img src="https://i.pinimg.com/originals/05/85/2c/05852cadc21a05b5054c0511d69987d7.jpg" alt = "Photo" style="fill: 1000">
+                        </center>
+                    </ul>
+                    <p>Vào đầu năm 1919, Nguyễn Tất Thành tham gia Đảng Xã hội Pháp. Chiến tranh thế giới thứ nhất kết thúc, ngày 18/06/1919, đại biểu các nước đế quốc tham gia chiến tranh họp Hội nghị ở Véc-xây (18-21/6/1919) để giải quyết các vấn đề của chiến tranh. Khi đó, cũng như nhiều người, nhiều dân tộc “từng bị mê hoặc bởi những tuyên bố rộng rãi về quyền tự quyết của các dân tộc” của Tổng thống Hoa Kỳ, thay mặt Hội những người yêu nước Việt Nam tại Pháp, Nguyễn Tất Thành cùng Phan Châu Trinh, Phan Văn Trường thảo bản Yêu sách của nhân dân An Nam (bản Yêu sách tám điểm) gửi tới Hội nghị Véc xây. Bản Yêu sách tám điểm, trong có điểm nổi bật là “đòi Chính phủ các nước họp Hội nghị phải thừa nhận các quyền tự do, dân chủ và quyền bình đẳng của dân tộc Việt Nam”. Dưới bản Yêu sách tám điểm ký tên Nguyễn Ái Quốc, tuy không được chấp nhận nhưng Bản yêu sách của Người được xem là điểm khởi đầu của một hành trình đấu tranh cách mạng và điểm khởi đầu đó đã gây chấn động nước Pháp và thế giới. Sau đó, Nguyễn Ái Quốc đã chuyển thể bản Yêu sách tám điểm qua thể thơ lục bát và song thất lục bát với tên gọi Việt Nam yêu cầu ca.</p>
+                </section>
             </div>
         </div>
     </div>
-    <hr>
-
-    <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-            <h4>Follow Me</h4>
-        </div>
-        
-        <div class="w3-container w3-xlarge w3-padding">
-            <a href="https://www.facebook.com/dkang.text" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-            <a href="https://www.instagram.com/dkang.text" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-            <a href="https://twitter.com/dkangtext" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-        </div>
-          
-    </div>
-    <hr>
-
-    <!-- END About/Intro Menu -->
-    </div>
-
-    <!-- END GRID -->
-    </div>
-
-    <!-- END w3-content -->
-    </div>
-
-    <section id="home">
-        <h2>HOME</h2>
-        <p>Chào mọi người ! Lại là Đình Khang đây ...</p>
-        <p>Hiện tại mình đang là sinh viên năm nhất ngành An toàn Thông tin thuộc khoa Mạng máy tính và Truyền thông, trường Đại học Công nghệ Thông tin - ĐHQG HCM</p>
-        <p>Và welcome to my blog site <3</p>
-    </section>
-    
-    <section id="about">
-        <h2>ABOUT ME</h2>
-        <ul>
-            <center><img src="https://i.pinimg.com/originals/b0/50/d5/b050d50e48b5786057a90ac03cda8cc7.jpg" alt "Doan khoa Mang may tinh & Truyen thong" /></center>
-        </ul>
-        <h3>Quá trình hoạt động:</h3>
-        <li>Tháng 09/2023: Cộng tác viên Ban Học tập trực thuộc Đoàn khoa Mạng máy tính và Truyền thông.</li>
-        <li>Tháng 09/2023: Cộng tác viên Ban Truyền thông và Sự kiện trực thuộc Đoàn khoa Mạng máy tính và Truyền thông.</li>
-        <li>Tháng 10/2023: Cộng tác viên Ban Phong trào thuộc Đội Công tác Xã hội - UIT.</li>
-        <li>Tháng 10/2023: Thành viên Câu lạc bộ Lớp trưởng UIT.</li>
-        <li>Tháng 12/2023: Chiến sĩ chiến dịch Mùa Đông Yêu Thương 2023.</li>
-        <li>Tháng 01/2024: Chiến sĩ chiến dịch Xuân Tình Nguyện 2024.</li>
-        <li>Tháng 03/2024: Thuộc Ban Chấp hành mở rộng Đoàn khoa Mạng máy tính và Truyền thông.</li>
-        <li>Tháng 03/2024: Chiến sĩ chiến dịch Ngọn Đuốc Xanh 2.</li>
-    </section>
- 
-    <section id="contact">
-        <h2>CONTACT</h2>
-        <p>Liên hệ qua email: <a href="mailto:23520694@gm.uit.edu.vn">23520694@gm.uit.edu.vn</a></p>
-    </section>
-
-    <!-- Footer -->
-    <footer class="w3-container w3-dark-grey" style="padding:32px">
-        <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-        <p>Copyright © 2024 - dktxt</p>
-    </footer>
-
-    <!--fontawesome-->
-    <script src="https://kit.fontawesome.com/0c6e82ebfb.js" crossorigin="anonymous"></script>
 
     <script>
-        // Xử lý việc thích bài viết
-        function likeFunction(x) 
-        {
-            x.style.fontWeight = "bold";
-            x.innerHTML = "✓ Liked";
+        // Function to open About Modal
+        function openAbout() {
+            document.getElementById('about').style.display = 'block';
+        }
+
+        // Function to close About Modal
+        function closeAbout() {
+            document.getElementById('about').style.display = 'none';
+        }
+
+        // Function to open Information Modal
+        function openInformation() {
+            document.getElementById('information').style.display = 'block';
+        }
+
+        // Function to close Information Modal
+        function closeInformation() {
+            document.getElementById('information').style.display = 'none';
         }
     </script>
+
+     <!-- Footer -->
+     <footer class="w3-container w3-padding-20 w3-white" style="padding:32px">
+        <h2>THÔNG TIN LIÊN HỆ:</h2>
+        <h5> 📍 Địa chỉ: Đường Hàn Thuyên, khu phố 6 P, Thủ Đức, Thành phố Hồ Chí Minh</h5>
+        <h5> ✈️ Facebook: <a href="https://www.facebook.com/uit.nc">Mạng máy tính và Truyền thông</a></h5>
+        <h5> ✉️ Email: <a href="mailto:doanthanhnien@suctremmt.com">doanthanhnien@suctremmt.com</a></h5>
+    </footer>
 
 </body>
 
